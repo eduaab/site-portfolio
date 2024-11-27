@@ -20,6 +20,9 @@ body {
 
 .hero-content {
   margin-top: 20px; /* Espaço entre a imagem e o texto */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos dentro de .hero-content */
 }
 
 .hero h1 {
@@ -38,16 +41,29 @@ body {
   color: #000;
 }
 
-.hero-link {
+.button-container {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 20px; /* Espaçamento entre os botões */
+  margin-top: 20px; /* Adiciona um espaço entre o texto e os botões */
+}
+
+.hero-link,
+.hero-button {
+  padding: 12px 30px;
+  background-color: #000000; /* Mesma cor do cabeçalho */
+  color: #fff;
   text-decoration: none;
-  color: #000;
   font-weight: bold;
-  border-bottom: 2px solid #000;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-.hero-link:hover {
-  color: #333;
-  border-bottom-color: #333;
+.hero-button {
+  background-color: #000000; /* Cor do botão "Minhas Habilidades" */
 }
 
-
+.hero-link:hover,
+.hero-button:hover {
+  background-color: #641f1f; /* Cor mais escura para o efeito de hover */
+}
