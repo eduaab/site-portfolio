@@ -1,4 +1,3 @@
-/* Estilos gerais */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,7 +6,6 @@ body {
   color: #333;
 }
 
-/* Cabeçalho da página de projetos */
 .projects-header {
   text-align: center;
   background-color: #8a3131;
@@ -24,7 +22,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Container de projetos */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -34,7 +31,6 @@ body {
   margin: 0 auto;
 }
 
-/* Cartão individual de projeto */
 .project-card {
   background-color: #fff;
   border-radius: 8px;
@@ -48,11 +44,10 @@ body {
   transform: translateY(-5px);
 }
 
-/* Imagem do projeto - Ajustar o tamanho da imagem */
 .project-card img {
-  width: 100%; /* Definir uma largura menor para a imagem */
-  height: auto; /* Mantém a proporção da imagem */
-  margin-top: 60px; /* Espaçamento entre a imagem e o conteúdo */
+  width: 100%; 
+  height: auto; 
+  margin-top: 60px; 
 }
 
 .project-card h2 {
@@ -66,7 +61,6 @@ body {
   margin: 10px 0;
 }
 
-/* Estilo do link de ver mais */
 .project-link {
   display: inline-block;
   margin: 15px 0;
@@ -83,7 +77,6 @@ body {
   background-color: #641f1f;
 }
 
-/* Estilo do botão de voltar */
 .back-button {
   position: absolute;
   top: 20px;
