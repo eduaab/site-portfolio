@@ -1,22 +1,13 @@
-document.querySelectorAll('.hero-link').forEach(link => {
-  link.addEventListener('click', function (event) {
-    event.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
     
-    const url = link.getAttribute('href');
-
-    fetch(url)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP status ${response.status}`);
-        }
-        return response.text();
-      })
-      .then(data => {
-        document.body.innerHTML = data;
-      })
-      .catch(error => {
-        console.error('Erro ao carregar o conteúdo:', error);
-        alert('Erro ao carregar a página. Tente novamente mais tarde.');
-      });
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
+});
+
+document.getElementById('theme-toggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark-theme');
 });
