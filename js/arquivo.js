@@ -9,5 +9,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 document.getElementById('theme-toggle').addEventListener('click', function() {
-  document.body.classList.toggle('dark-theme');
+  document.body.classList.toggle('dark-theme'); // Alterna a classe dark-theme no body
 });
+

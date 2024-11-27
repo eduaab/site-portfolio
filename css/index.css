@@ -104,7 +104,7 @@ body {
 }
 
 .social-button.github:hover {
-  background-color: #000;
+  background-color: #000000bb;
 }
 
 .social-button.linkedin {
@@ -116,12 +116,25 @@ body {
 }
 
 body {
+  color: black; 
   background-color: white;
+}
+
+h1, h2, h3, p, a {
   color: black;
 }
 
+/* Tema Escuro */
 body.dark-theme {
-  background-color: black;
+  color: white;
+  background-color: #000000; 
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme p, 
+body.dark-theme a {
   color: white;
 }
 
@@ -129,13 +142,10 @@ body.dark-theme {
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #000000;
-  color: white;
+  background-color: #8a3131; 
+  color: white; 
   border: none;
+  border-radius: 30px; 
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-#theme-toggle:hover {
-  background-color: #8a3131;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
 }
