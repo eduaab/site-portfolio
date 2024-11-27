@@ -67,3 +67,50 @@ body {
 .hero-button:hover {
   background-color: #641f1f;
 }
+
+.footer-container {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.social-button {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  padding: 12px 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-button.github {
+  background-color: #333; 
+}
+
+.social-button.github:hover {
+  background-color: #000;
+}
+
+.social-button.linkedin {
+  background-color: #0077b5; 
+}
+
+.social-button.linkedin:hover {
+  background-color: #005582;
+}
