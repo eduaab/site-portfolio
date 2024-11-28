@@ -124,7 +124,6 @@ h1, h2, h3, p, a {
   color: black;
 }
 
-/* Tema Escuro */
 body.dark-theme {
   color: white;
   background-color: #000000; 
